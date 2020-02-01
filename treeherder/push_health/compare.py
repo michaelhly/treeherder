@@ -16,7 +16,6 @@ def get_response_object(parent_sha, push, repository):
         'repository': RepositorySerializer(repository).data,
         'id': None,
         'jobCounts': None,
-        'repoUrl': None,
     }
     if push:
         resp.update({

@@ -57,13 +57,12 @@ PushParent.propTypes = {
   parent: PropTypes.shape({
     repository: PropTypes.object.isRequired,
     revision: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-    repoUrl: PropTypes.string.isRequired,
     job_counts: PropTypes.shape({
       completed: PropTypes.number.isRequired,
       pending: PropTypes.number.isRequired,
       running: PropTypes.number.isRequired,
     }),
+    id: PropTypes.number,
   }).isRequired,
 };
 
